@@ -29,5 +29,5 @@ def sha256(*args):
 	print(allData)
 if __name__ == '__main__':
 	asyncio.run(aboutMe())
-	print(r'Hash all data in sha256:\n')
+	print('Hash all data in sha256:')
 	sha256(data["name"], data["vacancy"], data["salary"])
