@@ -23,7 +23,9 @@ async def aboutMe():
 def sha256(*args):
 	allData = []
 	for var in args:
-		allData.append(hashlib.sha256(var.encode('utf-8')).hexdigest())
+		if var != str:
+			var = str(var)
+			allData.append(hashlib.sha256(var.encode('utf-8')).hexdigest())
 	print(allData)
 if __name__ == '__main__':
 	asyncio.run(aboutMe())
