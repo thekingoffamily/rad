@@ -1,2 +1,2 @@
-pytest
-asyncio
+pytest=6.2.5
+asyncio=3.4.3
